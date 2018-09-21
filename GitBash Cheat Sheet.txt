@@ -1,0 +1,33 @@
+---Git Bash Cheat Sheet---
+
+ls = Lists all files/folders.
+cd = Moves you into a specified folder.
+cd - = Moves you back a folder.
+
+Anything in "" is what you type.
+Anything inside [ ] you replace with what is needed, you don't need the [ ] to be around the data.
+
+--To find bash--
+
+Windows key then search for "bash". It is the multi-coloured icon.
+
+
+--Creating a repo--
+
+1) "ls" and "cd" into the desired folder.
+2) "github clone [link]" The [link] is found from your repo. Click on the green clone/download button and copy the link. You have to right-click and paste.
+3) Log in to github on the prompt. (this may also happen later don't worry if it doesn't happen now)
+4) The repo will be copied into the foler.
+
+--Updating a repo / uploading your work--
+
+1) "ls" and "cd" into the desired folder.
+2) "git add [file name]" This adds the files to be ready for upload. If adding a whole folder then replace [filename] with [--all].
+3) "git commit -m [reason for upload/changes made]" This again prepares the files and adds a reason for the upload, the reason must be in " ".
+4) "git push origin master" This uploads the files to your github, updating your repo.
+
+--Pulling / Downloading from github--
+
+1) "ls" and "cd" into the desired folder.
+2) "git pull" This will pull / download the files from your github onto your computer.
+

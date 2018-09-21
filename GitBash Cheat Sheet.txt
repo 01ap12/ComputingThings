@@ -30,4 +30,4 @@ Windows key then search for "bash". It is the multi-coloured icon.
 
 1) "ls" and "cd" into the desired folder.
 2) "git pull" This will pull / download the files from your github onto your computer.
-
+3) When pulling if the window fills with blue text asking for a merge reason, just close the terminal and then start it up again, this will fix it. (I think)

@@ -1,0 +1,79 @@
+<link rel="stylesheet" href="/static/style.css" type="text/css">
+
+<h1>Logic</h1>
+
+
+
+<div>
+<form  action="/logout">
+<input class="logout" type="submit" value="Log out">
+</form> 
+
+<h2> Hi, {{session["username"]}} </h2>
+
+<table>
+
+
+
+{% if session["admin"] %}
+<tr>
+	
+	<form action="/add" method="POST">
+	<td><input type="username" name="username" placeholder="Username">
+	</td><td><input type="password" name="password" placeholder="Password"></td>
+	<td>
+	<input class="add" type="submit" value="Add"></td>
+	</form>
+
+</tr>
+{% endif %}
+
+
+	
+{% for user in users %}
+
+
+
+
+
+
+{% if session["admin"] %}
+{% if user.username != "admin" %}
+<tr>
+<form action="/edit" method="POST">
+
+<input type="hidden" name= "username" value="{{user.username}}">
+<input type="hidden" name= "password" value="{{user.password}}">
+
+<td><input type="newU" name= "newU" placeholder="{{user.username}}"></td>
+	
+
+<td><input type="newP" name= "newP" placeholder="{{user.password}}"></td>
+
+<td>
+
+<input class="edit" type="submit" value="Edit"></td>
+
+</form>
+
+<form action="/remove" method="POST">
+
+<input type="hidden" name= "username" value="{{user.username}}">
+<input type="hidden" name= "password" value="{{user.password}}">
+
+<td>
+<input class="remove" type="submit" value="Remove">
+</td>
+</form>
+
+</tr>
+
+
+
+{% endif %}
+{% endif %}
+
+
+{% endfor %}
+</table>
+</div>

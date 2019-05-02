@@ -1,0 +1,81 @@
+input {
+margin-top: 15px; 
+margin-bottom: 20px;
+text-align: center;
+
+border: 2px solid black;
+color: black;
+font-size: 1.5em;
+
+font-family: nice;
+}
+
+@font-face{
+	font-family: nice;
+	src: url(Young.ttf);
+
+}
+
+.remove {
+	background-color: rgb(255,30,30);
+}
+
+.edit{
+	background-color: orange;
+}
+
+.add{
+	background-color: rgb(30,200,30);
+}
+
+.logout{
+	background-color: purple;
+}
+
+
+h2 {
+margin-top: 15px; 
+text-align: center;
+
+
+
+background-color: white;
+border: 2px solid black;
+color: black;
+font-size: 1.5em;
+font-family: nice;
+
+
+}
+
+
+
+div {
+/*background-image: url("https://images-na.ssl-images-amazon.com/images/I/41bPR81eYSL._SY450_.jpg");
+*/
+
+background-color: rgb(50,130,255);
+
+padding: 10px;
+border: 2px solid grey;
+
+}
+
+h1 {
+background-color: rgb(50,130,255);
+
+height: 60px;
+/*padding-left: 20px;
+*/
+padding-top: 10px;
+margin-top: -20px;
+margin-left: -20px;
+margin-right: -20px;
+
+text-align: center;
+font-size: 3em;
+color: black;
+font-family: nice;
+
+}
+

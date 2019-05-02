@@ -1,0 +1,9 @@
+<link rel="stylesheet" href="/static/style.css" type="text/css">
+
+<h1>Logic</h1>
+
+<div class="login">
+<form action="/logout">
+<input type="submit" value="Log out">
+</form> 
+</div>

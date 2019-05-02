@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="/static/style.css" type="text/css">
+{% block body %}
+{% if session['logged_in'] %}
+ 
+You're logged in already!
+ 
+
+
+
+{% else %}
+
+
+<h1>Logic</h1>
+
+<div class="login">
+<form action="/login" method="POST">
+  <input type="username" name="username" placeholder="Username">
+<input type="password" name="password" placeholder="Password">
+<input type="submit" value="Log in">
+</form> 
+</div>
+
+
+{% endif %}
+
+
+
+{% endblock %}
